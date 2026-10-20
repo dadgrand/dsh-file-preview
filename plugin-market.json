@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dadgrand's DSH plugins",
+    "ru": "Плагины dadgrand для DSH"
+  },
+  "description": {
+    "en": "Plugins for the DeepSeek Harness Web UI.",
+    "ru": "Плагины для веб-интерфейса DeepSeek Harness."
+  },
+  "metadata": {
+    "categories": {
+      "ui": {
+        "title": {
+          "en": "Interface",
+          "ru": "Интерфейс"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-file-preview",
+      "title": {
+        "en": "File Preview",
+        "ru": "Просмотр файлов"
+      },
+      "description": {
+        "en": "In-chat preview modal for local files, images, PDFs, Office documents and website links, with a hover peek, copy actions (path / contents / file) and open-in-browser / reveal-in-folder / default-app actions.",
+        "ru": "Всплывающий предпросмотр файлов, картинок, PDF, документов Office и ссылок прямо в чате: hover-карточка, копирование (путь / содержимое / файл), открытие в браузере, проводнике и приложении по умолчанию."
+      },
+      "icon": "https://raw.githubusercontent.com/dadgrand/dsh-file-preview/main/icon.svg",
+      "author": "dadgrand",
+      "homepage": "https://github.com/dagrand/dsh-file-preview#readme",
+      "repository": {
+        "url": "https://github.com/dadgrand/dsh-file-preview"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "preview",
+          "pdf",
+          "office",
+          "markdown",
+          "hover"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1792529910,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/dadgrand/dsh-file-preview",
+            "commit": "b9b0d90a1205f30c3da6689181589e6c4ee922e0"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    }
+  ]
+}
