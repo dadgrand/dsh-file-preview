@@ -1,6 +1,6 @@
 {
   "name": "dsh-file-preview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In-chat preview modal for local files, images, PDFs, Office documents and website links in the DSH Web UI.",
   "type": "module",
   "main": "index.js",
@@ -8,11 +8,11 @@
   "author": "dadgrand",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dagrand/dsh-file-preview.git"
+    "url": "https://github.com/dadgrand/dsh-file-preview.git"
   },
-  "homepage": "https://github.com/dagrand/dsh-file-preview#readme",
+  "homepage": "https://github.com/dadgrand/dsh-file-preview#readme",
   "bugs": {
-    "url": "https://github.com/dagrand/dsh-file-preview/issues"
+    "url": "https://github.com/dadgrand/dsh-file-preview/issues"
   },
   "keywords": [
     "dsh",
