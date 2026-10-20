@@ -11,6 +11,14 @@ const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'))
 const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim()
 const timestamp = Math.floor(Date.now() / 1000)
 
+// The published package installs from the npm registry by default; `--git`
+// emits the commit-pinned git source instead (same bytes for consumers without
+// registry access).
+const useGit = process.argv.includes('--git')
+const versionSource = useGit
+  ? { type: 'git', url: 'https://github.com/dadgrand/dsh-file-preview', commit }
+  : { type: 'npm' }
+
 const index = {
   format: 1,
   title: { en: "dadgrand's DSH plugins", ru: 'Плагины dadgrand для DSH' },
@@ -40,11 +48,7 @@ const index = {
         {
           version: pkg.version,
           publishTimestamp: timestamp,
-          source: {
-            type: 'git',
-            url: 'https://github.com/dadgrand/dsh-file-preview',
-            commit,
-          },
+          source: versionSource,
           engines: { dsh: pkg.dsh.engines.dsh },
         },
       ],
