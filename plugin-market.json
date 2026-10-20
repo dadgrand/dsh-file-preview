@@ -49,12 +49,12 @@
       },
       "versions": [
         {
-          "version": "0.1.1",
-          "publishTimestamp": 1792530788,
+          "version": "0.1.0",
+          "publishTimestamp": 1792531124,
           "source": {
             "type": "git",
             "url": "https://github.com/dadgrand/dsh-file-preview",
-            "commit": "16a5d7c188900aeb3dab03bba5e04e7f4a589358"
+            "commit": "229e9a1428319a8c4b1772f98f8a084d1739b84b"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2"
