@@ -1,0 +1,19 @@
+# Bundle patch for dsh-file-preview.
+#
+# One host row. The host half registers the file-preview route family under
+# /api/dsh-file-preview and serves it to the browser half:
+#
+#   GET  /api/dsh-file-preview/meta        file facts + preview kind
+#   GET  /api/dsh-file-preview/raw         bytes (Range supported)
+#   GET  /api/dsh-file-preview/text        UTF-8 / Windows-1251 text read
+#   GET  /api/dsh-file-preview/office-pdf  Office -> PDF through officeToPdf
+#   GET  /api/dsh-file-preview/link        website link metadata
+#   GET  /api/dsh-file-preview/resolve     resolve an attachment display name
+#   POST /api/dsh-file-preview/action      open / reveal / browser
+#   GET  /api/dsh-file-preview/status      live counters + last client seat
+#
+# The browser half draws the in-chat modal; nothing else in the composition
+# changes.
+- insert:
+    - id: file-preview
+      name: 'dsh-file-preview'

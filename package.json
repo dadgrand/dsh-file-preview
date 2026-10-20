@@ -1,0 +1,66 @@
+{
+  "name": "dsh-file-preview",
+  "version": "0.1.0",
+  "description": "In-chat preview modal for local files, images, PDFs, Office documents and website links in the DSH Web UI.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "dadgrand",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dagrand/dsh-file-preview.git"
+  },
+  "homepage": "https://github.com/dagrand/dsh-file-preview#readme",
+  "bugs": {
+    "url": "https://github.com/dagrand/dsh-file-preview/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "file-preview",
+    "preview",
+    "pdf",
+    "office",
+    "markdown",
+    "image",
+    "hover-card"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/client.js",
+    "lib/host/**/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
