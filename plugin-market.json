@@ -33,7 +33,7 @@
       },
       "icon": "https://raw.githubusercontent.com/dadgrand/dsh-file-preview/main/icon.svg",
       "author": "dadgrand",
-      "homepage": "https://github.com/dagrand/dsh-file-preview#readme",
+      "homepage": "https://github.com/dadgrand/dsh-file-preview#readme",
       "repository": {
         "url": "https://github.com/dadgrand/dsh-file-preview"
       },
@@ -49,12 +49,12 @@
       },
       "versions": [
         {
-          "version": "0.1.0",
-          "publishTimestamp": 1792529910,
+          "version": "0.1.1",
+          "publishTimestamp": 1792530788,
           "source": {
             "type": "git",
             "url": "https://github.com/dadgrand/dsh-file-preview",
-            "commit": "b9b0d90a1205f30c3da6689181589e6c4ee922e0"
+            "commit": "16a5d7c188900aeb3dab03bba5e04e7f4a589358"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2"
